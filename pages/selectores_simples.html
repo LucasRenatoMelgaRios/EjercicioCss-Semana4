@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores Simples</title>
+    <link rel="stylesheet" href="../styles/selectores_simples.css">
+</head>
+<body>
+    <header>
+        <h1>Selectores simples</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Selector de etiqueta:</h2>
+            <div>
+                <p>Estos selectores son los más simples y tienen especificidad 1, al utilzarlos aplicarán estilos a todas las etiquetas del mismo tipo</p>
+                <p>Ejemplo:</p>
+                <p>h3{</p>
+                <p>color: red</p>
+                <p>}</p>
+                <p>Este selector aplicará estidos a todas las etiquetas &lt;h3&gt;
+                </p>
+            </div>
+        </article>
+        <article>
+            <h2>Selector de clase:</h2>
+            <div>
+                <p>Estos selectores tienen especificidad 10, se llaman mediante: ."Nombre de la clase" y son más usados con los estilos css</p>
+                <p>Ejemplo:</p>
+                <p>.encabezadoPrincipal{</p>
+                <p>color: black</p>
+                <p>}</p>
+                <p>Este selector aplicará estidos a todas las etiquetas con la clase "encabezadoPrincipal".</p>
+        
+                <article class="articulo1">
+                    <h2>Selector de ID:</h2>
+                    <div>
+                        <p>Estos selectores se llaman mediante #"nombreDeLaClase" aunque no es recomendado usarlos para aplicar estilos css</p>
+                        <p>Ejemplo:</p>
+                        <p>#encabezado{</p>
+                        <p>color: red</p>
+                        <p>}</p>
+                        <p>Este selector aplicará estidos a todas las etiquetas con la clase #encabezado.
+                        </p>
+                    </div>
+                </article>
+
+                <article>
+                    <h2>Selector Universal:</h2>
+                    <div>
+                        <p>Este selector aplica estilos a todo el documento html y se llama mediante "*"</p>
+                        <p>Ejemplo:</p>
+                        <p>*{</p>
+                        <p>color: red</p>
+                        <p>}</p>
+                        <p>Este selector aplicará estidos a todas las etiquetas html;
+                        </p>
+                    </div>
+                </article>
+            </div>
+        <footer>
+            <nav>
+                <a href="selectores_simples.html">selectores simples</a>
+                <a href="selectores_compuestos.html">selectores compuestos</a>
+            </nav>
+        </footer>
+    </main>
+</body>
+</html>

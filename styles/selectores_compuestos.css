@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Roboto:wght@300&display=swap');
+
+body {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* Aplica estilos al enlace que es descendiente directo de un elemento con la clase "menu" */
+
+.ejemplo {
+    border: black solid;
+    padding: 40px;
+    background-color: beige;
+}
+
+.menu {
+    border: black solid;
+    padding: 40px;
+    background-color: beige;
+}
+
+.menu p {
+    text-decoration: none;
+    color: green;
+
+}
+
+.articulo2{
+    margin-top: 150px;
+}
+
+.ejemplo > p {
+    color:blueviolet;
+}
+
+.hermano h3 + p {
+    
+    color: peru;
+}
+
+.hermano {
+    border: black solid;
+    padding: 40px;
+    background-color: beige;
+}
+
+.hermanos2{
+    border: black solid;
+    padding: 40px;
+    background-color: beige; 
+}
+
+.hermanos2 h2 ~ p {
+    color:blueviolet
+}
+
+.titulos {
+    border: black solid;
+    padding: 40px;
+    background-color: beige; 
+    color: red;
+}

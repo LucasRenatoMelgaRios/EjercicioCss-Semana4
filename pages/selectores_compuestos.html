@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores Compuestos</title>
+    <link rel="stylesheet" href="../styles/selectores_compuestos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Selectores Compuestos</h1>
+    </header>
+    <main>
+        <article>
+        <h2>Selector descendiente:</h2>
+        <p>Aplicará estilos a todos los hijos de un padre, y no tienen que ser hijos directos</p>
+        <p>Su sintaxis se reduce a:</p>
+        <p>."nombreDeLaClase" "etiqueta"</p>
+        <p>Ejemplo:</p>
+        <p>.menu p{</p>
+        <p>color: red;</p>
+        <p>}</p>
+        <p>En este ejemplo:</p>
+        <p>Todas las etiquetas &lt;p&gt que estén anidadas en la clase menú serán modificadas</p>
+        <div class="menu">
+            <p>Fui modificado por mi padre &lt;div&gt</p>
+        </div>
+    <article class="articulo2">
+        <h2>Selector hijo directo:</h2>
+        <p>Este selector aplicará estilos <strong>SÓLO</strong> a los hijos directos de una clase</p>
+        <p>Su sintaxis se reduce a:</p>
+        <p>."nombreDeLaClase" > "etiqueta"</p>
+        <p>Ejemplo:</p>
+        <p>.menu > p {</p>
+        <p>color: red;</p>
+        <p>}</p>
+        <p>En este ejemplo:</p>
+        <p>Todas las etiquetas que sean hijos directos de la clase menú serán modificadas, más no las que estén contenidas en algun otro contenedor</p>
+        <div class="ejemplo">
+            <p>Me pinto por que soy hijo directo</p>
+            <p>Me pinto por que soy hijo directo</p>
+            <p>Me pinto por que soy hijo directo</p>
+    
+            <div>
+                <p>No me pinto por que no soy hijo directo</p>
+                <p>No me pinto por que no soy hijo directo</p>
+            </div>
+        </div>
+    </article class="articulo 3">
+        <h2>Selector Hermano siguiente o Adyacente:</h2>
+        <p>
+            Este selector aplicará estilos sólo a la etiqueta adyacente especificada.
+        </p>
+        <p>Su sintaxis se reduce a:</p>
+        <p>."nombreDeLaClae" "etiqueta" + "etiquetaAdyacenteAplicarEstilos{"</p>
+        <p>color: yellow;</p>
+        <p>}</p>
+        <p>Ejemplo: </p>
+        <p>.menu h2 + p{</p>
+        <p>background-color: peru;</p>
+        <p>}</p>
+        <p>En este ejemplo:</p>
+        <p>Solo una etiqueta &lt;p&gt, que es adyacente a la etiqueta h2 de la clase menú será modificada</p>
+        <div class="hermano">
+            <h3>Soy un h3</h3>
+            <p>Me pinto porque soy adyacente al h3 especificado en el selector</p>
+            <p>No me pinto ya que no soy adyacente al h3</p>
+            <p>Yo tampoco</p>
+        </div>
+    </article>
+
+    <article>
+        <h3>Selector Hermanos siguientes o Adyacentes:</h3>
+        <p>
+            Este selector aplicará estilos a <strong>TODOS</strong> los hermanos siguientes o adyacentes de la etiqueta especificada.
+        </p>
+        <p>Su sintaxis se reduce a:</p>
+        <p>."nombreDeLaClase" "etiqueta" ~ "etiquetasAdyacentesAplicarEstilos" {</p>
+        <p> color: gold;</p>
+        <p>}</p>
+        <p>Ejemplo:</p>
+        <p>.menu h2 ~ p{</p>
+        <p>color: violet;</p>
+        <p>}</p>
+        <p>En este ejemplo:</p>
+        <p>Todas las etiquetas adyacentes y que sean hermanos directas de la etiqueta &lt;h2&gt se modificarán.</p>
+        <div class="hermanos2">
+            <h2>Soy un h2</h2>
+            <p>Soy un p y me pinto porque soy hermano directo de &lt;h2&gt</p>
+            <p>Soy un p y me pinto porque soy hermano directo de &lt;h2&gt</p>
+            <p>Soy un p y me pinto porque soy hermano directo de &lt;h2&gt</p>
+            <p>Soy un p y me pinto porque soy hermano directo de &lt;h2&gt</p>
+        </div>
+    </article>
+
+    <article>
+       <h2>Selector por anidamiento:</h2>
+       <p>Este selector agrupa varias etiquetas y las modifica de manera agrupada, evitando así varias líneas de código que darán el mismo resultado</p>
+       <p>Su sintaxis se reduce a:</p>
+       <p>"etiqueta1", "etiqueta2", "etiqueta3" {</p>
+       <p>color: blueviolet;</p>
+       <p>}</p>
+       <p>Ejemplo:</p>
+       <p>h2, h3, h4{</p>
+       <p>color: red;</p>
+       <p>}</p>
+       <p>En este ejemplo:</p>
+       <p>Las etiquetas h2, h3 y h4 serán modificadas ahorrando así varias lineas de código.</p>
+       <div class="titulos">
+        <h2>Soy un h2</h2>
+        <h3>Soy un h3</h3>
+        <h4>Soy un h4</h4>
+       </div>
+    </article>
+    </main>
+    <footer>
+        <nav>
+            <a href="selectores_simples.html">selectores simples</a>
+            <a href="selectores_compuestos.html">selectores compuestos</a>
+        </nav>
+    </footer>
+
+</body>
+</html>
