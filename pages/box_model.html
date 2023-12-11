@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/box_model.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Que es el box model?</h1>
+    </header>
+    <main>
+        <article>
+            <p>El box model en css es un concepto muy importante y que se usa bastante en css ya que define y representa como se verá cada elemento en cualquier página web</p>
+            <p>Cada elemento en html se considera una cajita , por lo que se aplicarán conceptos de alto, ancho, relleno(padding) y margen(margin)</p>
+            <p>Ejemplo:</p>
+            <div class="caja">
+                <p>Soy una etiqueta de tipo bloque y soy una caja</p>
+            </div>
+        </article>
+
+        <article>
+            <h2>Capas del Box Model</h2>
+            <p>El modelo de caja consta de cuatro partes principales: </p>
+            <p> <strong>Contenido (Content):</strong> Es el área donde se muestra el contenido real del elemento, como texto, imágenes, etc.</p>
+            <p><strong>Relleno (Padding):</strong> Es un espacio transparente alrededor del contenido, dentro de la caja. Puede ser especificado en píxeles, porcentajes u otras unidades.</p>
+            <p><strong>Borde (Border):</strong> Es una línea que rodea el relleno y el contenido. Al igual que el relleno, el borde puede tener un ancho y un estilo definidos.</p>
+            <p><strong>Margen (Margin):</strong>Es el espacio transparente fuera de la caja. Es el espacio que separa esta caja de otras cajas adyacentes.</p>
+            <p>Por lo tanto la formula para calcular el tamaño total de una etiqueta es:</p>
+            <p><strong>Tamaño total= </strong>Contenido + Relleno + Borde + Margen </p>
+        </article>
+        <article>
+            <h2>Ejemplos:</h2>
+            <div class="ejemplo1">
+                <h3> Contenido:</h3>
+                <p>Soy un texto ejemplo y ocupo el contenido de mi contenedor</p>
+            </div>
+            <h3>Padding:</h3>
+            <div class="cajaDeEjemplo2">
+                <div class="ejemplo2">
+                    <p>El padding de este contenedor define el espacio entre el contenido y el borde</p>
+                </div>
+            </div>
+            <h3>Border:</h3>
+            <div class="ejemplo3">
+                <p>Soy una caja y mi borde ocupa 10px</p>
+            </div>
+            <h3>Margin:</h3>
+            <div class="ejemplo4">
+                <p>Soy una caja normal</p>
+                <div class="margen1">Soy el margen</div>
+                <p>Soy una caja alejada de mi hermano ya que mi margen es de 25px</p>
+            </div>
+
+            <article>
+                <h2>Que es el margin negativo?
+                   <p> 
+                    El uso de márgenes negativos en CSS implica que se está moviendo un elemento fuera de su contenedor o superponiendo elementos vecinos. Se puede aplicar márgenes negativos para posicionar elementos de manera específica</p> 
+                </h2>
+                <div>
+                    <div class="contenedor">
+                        <div class="elemento1"></div>
+                        <div class="elemento2"></div>
+                      </div>
+                </div>
+            </article>
+            <article>
+                <h2>Que es el desbordamiento vertical por margenes?</h2>
+                <p>El colapso de márgenes verticales en CSS es un comportamiento específico cuando dos márgenes verticales adyacentes se encuentran. En lugar de sumarse, los márgenes colapsan, tomando el valor del margen más grande entre ellos o, si uno de ellos es negativo, el valor más pequeño.
+                </p>
+  <div class="contenedor2">
+    <div class="elemento3">
+      <p>Elemento 1</p>
+      <p>Contenido del elemento 1.</p>
+    </div>
+
+    <div class="elemento4">
+      <p>Elemento 2</p>
+      <p>Contenido del elemento 2.</p>
+    </div>
+  </div>
+  <p>.contenedor tiene un borde y un relleno, y contiene dos elementos hijos..elemento1 y .elemento2 tienen márgenes inferiores de 20px.Debido al colapso de márgenes verticales, el margen inferior de .elemento1 no se suma al margen superior de .elemento2. En su lugar, se toma el margen más grande, que es 20px.</p>
+
+            </article>
+        </article>
+
+  <article>
+    <h2>Que es el centrado perfecto horizontal?</h2>
+    <p>El centrado perfecto horizontal se refiere a la técnica de centrar un elemento horizontalmente dentro de su contenedor padre. Se puede lograr esto de varias maneras, pero una de las más comunes y simples es utilizando la propiedad margin: auto; en combinación con un ancho definido para el elemento que estás centrando.
+
+    </p>
+  </article>
+
+  <article>
+    <h2>Que es el selector universal "*" y en que casos se usa?</h2>
+    <p>El selector universal * en CSS selecciona todos los elementos en una página HTML. Se utiliza para aplicar estilos globales que afectan a todos los elementos dentro del alcance del selector. </p>
+    <p>Uso: RESETAR ESTILOS:</p>
+    <p>Se puede utilizar * para aplicar un "reset" básico de estilos, estableciendo propiedades como margin y padding en cero, para asegurarte de que todos los elementos tengan márgenes y rellenos consistentes.</p>
+    <p>USO: ESTABLECER ESTILOS GLOBALES:</p>
+    <p>Si se desea aplicar un estilo global a todos los elementos, como un tipo de fuente predeterminado o un color de texto base, se puede usar el selector universal.
+    </p>
+</article>
+    </main>
+    <footer>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="selectores_simples.html">selectores simples</a>
+            <a href="selectores_compuestos.html">selectores compuestos</a>
+            <a href="box_model.html">BoxModel</a>
+            <a href="shorthand.html">Shorthand</a>
+
+        </nav>
+    </footer>
+</body>
+</html>

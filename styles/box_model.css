@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Roboto:wght@300&display=swap');
+
+
+
+p {
+    font-size: 1.5rem;
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.caja{
+    width: 500px;
+    border: black 3px solid;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    background-color: blueviolet;
+}
+
+.ejemplo1 p{
+    width: 600px;
+    border: black 3px solid;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    background-color: rgb(43, 226, 156);
+    padding: 20px;
+}
+
+
+.ejemplo2 p{
+    
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: rgb(43, 226, 156);
+    padding: 30px;
+    
+}
+
+.cajaDeEjemplo2 {
+    width: 600px;
+    background-color: blueviolet;
+    display: flex;
+    border: black 3px solid;
+
+
+}
+
+.ejemplo3 p{
+    width: 600px;
+    border: black 10px solid;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    background-color: rgb(226, 43, 43);
+    padding: 20px;
+}
+
+.ejemplo4 {
+    width: 600px;
+}
+
+.ejemplo4 p{
+    border: black 3px solid;
+    padding: 20px;
+    background-color: chocolate;
+    margin-bottom: -10px;
+    
+}
+
+.ejemplo4 p ~ p {
+    border: black 3px solid;
+    padding: 15px;
+    background-color: rgb(215, 41, 131);
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.margen1 {
+    width: inherit;
+    height: 50px;
+    background-color: rgb(168, 156, 212);
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+.contenedor {
+    width: 300px;
+    height: 150px;
+    background-color: #eee;
+    overflow: hidden; /* Evita el desbordamiento de los elementos superpuestos */
+  }
+
+  .elemento1 {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    margin: 20px; /* Margen positivo para separar del borde del contenedor */
+  }
+
+  .elemento2 {
+    width: 100px;
+    height: 100px;
+    background-color: #e74c3c;
+    margin: -50px 0 0 150px; /* Margen negativo para superponer en la esquina superior derecha */
+
+  }
+
+
+  .contenedor2 {
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+
+  .elemento3, .elemento4 {
+    margin-bottom: 20px;
+    background-color: #3498db;
+  }
